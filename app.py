@@ -110,7 +110,7 @@ def send_notification(subject, email_message, to_email, to_phone, sms_message):
 
         message = client.messages.create(
             body=sms_message,
-            from_='+16188449558',
+            from_='',# Phone number
             to=to_phone
         )
         print("SMS:", sms_message)
